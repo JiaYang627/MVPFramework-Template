@@ -7,5 +7,5 @@ import com.jiayang.mvp.mvpframework.m.rxhelper.ErrorListener
 import ${packageName}${ipmPackageName}.${ipmName}
 </#if>
 
-class ${presenterName}(errorListener: ErrorListener?) : BasePresenter<<#if ipmName?has_content>${ipmName}</#if>>(errorListener) {
+class ${presenterName} @Inject constructor (errorListener: ErrorListener?) : BasePresenter<<#if ipmName?has_content>${ipmName}</#if>>(errorListener) {
 }
