@@ -3,7 +3,7 @@
 
     <application>
         <activity android:name="${packageName}${ativityPackageName}.${activityClass}"
-            >
-        </activity>
+            />
+        
     </application>
 </manifest>

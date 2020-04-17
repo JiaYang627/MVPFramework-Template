@@ -22,9 +22,9 @@
 </#if>
 
 <#if needActivity>
-    <instantiate from="root/src/app_package/JYActivity.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.java" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.java" />
+    <instantiate from="root/src/app_package/JYActivity.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.${ktOrJavaExt}" />
 </#if>
 
 
@@ -41,21 +41,21 @@
 </#if>
 
 <#if presenterName?has_content && needActivity ||needFragment >
-    <instantiate from="root/src/app_package/JYPresenter.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.java" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.java" />
+    <instantiate from="root/src/app_package/JYPresenter.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.${ktOrJavaExt}" />
 </#if>
 
 <#if presenterName?has_content && needLazyFragment>
-    <instantiate from="root/src/app_package/JYLazyPresenter.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.java" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.java" />
+    <instantiate from="root/src/app_package/JYLazyPresenter.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(presenterPackageName)}/${presenterName}.${ktOrJavaExt}" />
 </#if>
 <#if ipmName?has_content>
-    <instantiate from="root/src/app_package/JYIpm.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ipmPackageName)}/${ipmName}.java" />
+    <instantiate from="root/src/app_package/JYIpm.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ipmPackageName)}/${ipmName}.${ktOrJavaExt}" />
 
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ipmPackageName)}/${ipmName}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ipmPackageName)}/${ipmName}.${ktOrJavaExt}" />
 </#if>
 
 

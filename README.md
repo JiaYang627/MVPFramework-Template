@@ -28,3 +28,4 @@ AndroidStudio Activity 模版存放路径 (请注意是放在 activities 文件�
 ### 注意事项
 
 * 模板是基于 JessYan 的MVPArmsTemplate 模板进行编写，关于注意事项请看 MVPArmsTemplate 的 [README](https://github.com/JessYanCoding/MVPArmsTemplate/blob/master/README.md) 
+* 2020-04-17 增加 Activity 页面的 Kotlin 版本，Fragment 相关还未增加
